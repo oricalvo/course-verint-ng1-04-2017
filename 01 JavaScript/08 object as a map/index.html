@@ -1,0 +1,37 @@
+<html>
+<body>
+	<script>
+		//var obj = {};
+		var obj = {id:1, name: "Ori", email: "ori@gmail.com"};
+
+        obj["parent"] = {id:2};
+		obj.parent = {id:2};
+
+		//obj["name"] = undefined;
+		delete obj["name"];
+
+        for(var key in obj) {
+            console.log(key + ": ", obj[key]);
+        }
+
+        if("id" in obj) {
+            console.log("EXIST");
+        }
+
+        if(obj.hasOwnProperty("id")) {
+            console.log("EXIST");
+        }
+
+        function f() {
+            console.log(id);
+        }
+
+        console.log(f);
+        f.id = 123;
+        f.g = function() {
+        }
+
+        f();
+	</script>
+</body>
+</html>

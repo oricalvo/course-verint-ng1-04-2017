@@ -1,0 +1,21 @@
+<html>
+<body>
+	<script>
+		checkCompatibility();
+		
+		var contact = {id:1, name: "Ori"};
+		var str = JSON.stringify(contact);
+		
+		function checkCompatibility(){
+			//if(typeof JSON == "undefined"){
+				window.JSON = {
+					parse: function(str){
+					},
+					stringify: function(obj){
+					}
+				};
+			//}
+		}
+	</script>
+</body>
+</html>

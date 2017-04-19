@@ -1,0 +1,15 @@
+<html>
+<body>
+	<script>
+		var x = function(){};
+		var y = {};
+
+		//var z = x || y;
+        var z = x && y;
+
+        var num = gc && gc.collect();
+
+		console.log(z);
+	</script>
+</body>
+</html>

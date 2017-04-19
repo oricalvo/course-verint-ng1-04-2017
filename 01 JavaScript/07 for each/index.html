@@ -1,0 +1,21 @@
+<html>
+<body>
+	<script>
+		var arr = [1000,2000,3000];
+		arr.name = "Ori";
+        arr["foo"] = "XXX";
+
+//		for(var i=0; i<arr.length; i++) {
+//		    console.log(arr[i]);
+//        }
+
+        for(var num in arr) {
+            console.log(num);
+        }
+
+//        for(var num of arr) {
+//            console.log(num);
+//        }
+	</script>
+</body>
+</html>

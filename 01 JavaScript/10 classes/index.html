@@ -1,0 +1,29 @@
+<html>
+<body>
+	<script>
+		var Contact = (function() {
+            var nextId = 1000;
+
+            function Contact(name, email) {
+                var id = nextId++;
+
+                function dump() {
+                    console.log(id + ": " + name + " " + email);
+                }
+
+                return {
+                    dump: dump,
+                }
+            }
+
+            return Contact;
+        })();
+
+        var c1 = Contact("ori", "diuhdiuhd");
+		var c2 = Contact("roni", "diudhidhudh");
+
+		c1.dump();
+		c2.dump();
+	</script>
+</body>
+</html>

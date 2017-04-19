@@ -1,0 +1,47 @@
+<html>
+<body>
+	<script>
+        function Counter() {
+            var num = 0;
+
+            return {
+                inc: function() {
+                    ++num;
+                },
+                dec: function() {
+                    --num;
+                },
+                get: function() {
+                    return num;
+                }
+            }
+        }
+
+        var c1 = new Counter();
+        var c2 = {
+            inc: c1.inc,
+			dec: c1.dec,
+			get: c1.get,
+		}
+
+		console.log(c1 == c2);
+
+        c1.inc();
+        c2.dec();
+
+        console.log(c1.get());
+
+        var f1 = new Counter().inc;
+        var f2 = new Counter().dec;
+//
+//        f1();
+//        console.log(c1.get());
+//
+//        c1.inc();
+//        c2.dec();
+//
+//        console.log(c1.get());
+//        console.log(c2.get());
+	</script>
+</body>
+</html>

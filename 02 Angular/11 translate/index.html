@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div ng-controller="HomeCtrl">
+        <h1>{{'product_name' | translate}}</h1>
+
+        <button ng-click="changeLang()">Change Lang</button>
+        <div>{{birthday | time}}</div>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-sanitize/angular-sanitize.js"></script>
+    <script src="HomeCtrl.js"></script>
+</body>
+</html>

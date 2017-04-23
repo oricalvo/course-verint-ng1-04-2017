@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>{{$$watchersCount}}</h1>
+
+    <div ng-controller="HomeCtrl">
+        <input ng-model="name">
+        <span>{{name}}</span>
+
+        <ul>
+            <li ng-repeat="contact in contacts">
+                <span>{{contact.name}}</span>
+                <span>{{contact.email}}</span>
+            </li>
+        </ul>
+    </div>
+
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-sanitize/angular-sanitize.js"></script>
+    <script src="HomeCtrl.js"></script>
+</body>
+</html>

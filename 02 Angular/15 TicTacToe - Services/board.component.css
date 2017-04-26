@@ -1,0 +1,16 @@
+my-board {
+    display: block;
+}
+
+my-board .cell {
+    display: inline-block;
+    vertical-align: top;
+    width: 10rem;
+    height: 10rem;
+    margin-bottom: 1px;
+    margin-right: 1px;
+    background-color: blue;
+    font-size: 6em;
+    text-align: center;
+}
+

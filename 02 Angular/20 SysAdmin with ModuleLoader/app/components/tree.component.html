@@ -1,0 +1,9 @@
+<div>Tree</div>
+
+<ul>
+    <li ng-repeat="folder in $ctrl.folders"
+        ng-click="$ctrl.select(folder)"
+        ng-class="{selected: folder.isSelected}">
+        <span>{{folder.name}}</span>
+    </li>
+</ul>

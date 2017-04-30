@@ -1,0 +1,24 @@
+my-tree {
+    background-color: rgb(220, 220, 220);
+}
+
+my-tree ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+my-tree li {
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+my-tree li:hover {
+    background-color: lightblue;
+}
+
+my-tree li.selected {
+    background-color: blue;
+}
+
+

@@ -1,0 +1,21 @@
+my-app {
+    display: flex;
+    flex-direction: column;
+}
+
+my-app .content {
+    display: flex;
+    flex-direction: row;
+}
+
+my-app .content my-tree {
+    width: 25%;
+}
+
+my-app .content my-list {
+    width: 50%;
+}
+
+my-app .content my-details {
+    width: 25%;
+}

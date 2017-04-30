@@ -1,12 +1,10 @@
 class TreeCtrl {
-    constructor(sysAdminService) {
+    constructor(private sysAdminService: SysAdminService) {
         console.log("TreeCtrl ctor");
-
-        this.sysAdminService = sysAdminService;
     }
 
     get folders() {
-        return sysAdminService.folders;
+        return this.sysAdminService.folders;
     }
 
     select(folder) {

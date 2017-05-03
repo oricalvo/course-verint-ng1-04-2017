@@ -11,7 +11,11 @@ export class AppComponent {
   contacts: Contact[];
 
   constructor(contactService: ContactService) {
-    this.contacts = contactService.contacts;
+    //this.contacts = contactService.contacts;
+
+    contactService.loadAll().then(contacts => {
+      this.contacts = contacts;
+    });
   }
 
   add() {

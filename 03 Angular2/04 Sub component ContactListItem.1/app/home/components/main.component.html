@@ -1,0 +1,11 @@
+<h1>Home</h1>
+
+<div>
+    <button (click)="refresh()">Refresh</button>
+</div>
+
+<div>
+    <input [(ngModel)]="name"><button (click)="add()">Add</button>
+</div>
+
+<my-contact-list [contacts]="contacts"></my-contact-list>

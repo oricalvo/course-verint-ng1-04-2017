@@ -1,0 +1,7 @@
+<h1>Number of A contacts {{count}}</h1>
+
+<ul>
+    <li *ngFor="let c of contacts; trackBy: trackByFn">
+        <my-contact-list-item [contact]="c" (onDelete)="onContactDelete($event)"></my-contact-list-item>
+    </li>
+</ul>

@@ -1,0 +1,10 @@
+<h1>Hello Angular5</h1>
+
+<ul>
+  <li *ngFor="let contact of contacts">
+    <span>{{contact.name}}</span>
+  </li>
+</ul>
+
+<input [(ngModel)]="name">
+<button (click)="add()">Add</button>
